@@ -32,6 +32,7 @@ class Libice(AutotoolsPackage, XorgPackage):
 
     depends_on("xproto", type=("build", "link"))
     depends_on("xtrans")
+    depends_on("xproto@7.0.25:", when="@1.1:")
     depends_on("pkgconfig", type="build")
     depends_on("util-macros", type="build")
 
